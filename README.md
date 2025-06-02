@@ -102,8 +102,8 @@ If you're not seeing any transcription output:
 2. Run the microphone test (`node mic-test.js`) to verify audio is being captured
 3. Check your Deepgram API key is correctly set in the `.env` file
 4. Ensure you're speaking loud enough for your microphone to pick up
-5. Try adjusting the microphone settings in the `constructor()` method of the `SpeechToText` class 
-- Cyan-colored "ULTRA-LOW" prefix
+5. Try adjusting the microphone settings in the `constructor()` method of the `SpeechToText` class
+6. Cyan-colored "ULTRA-LOW" prefix
 
 
 New Implementations:
