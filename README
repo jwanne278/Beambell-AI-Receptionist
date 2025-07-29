@@ -1,8 +1,16 @@
 # README File
 
-# 🎤 Live Microphone Transcription with Deepgram
+## 🎤 Live Microphone Transcription with Deepgram
 
 This Node.js project enables **real-time speech-to-text transcription** using Deepgram’s API. It features color-coded console output, processing time tracking, microphone diagnostics, and multiple configuration modes for latency and accuracy testing.
+
+---
+
+## 🧠 Project Background: BeamBell AI Receptionist
+
+**BeamBell’s AI receptionist** is designed to take on the repetitive and time-consuming task of answering phone calls, allowing your team to focus on what really matters.
+
+Whether handling customer inquiries or booking appointments, BeamBell provides your clients with **instant, accurate answers** while seamlessly integrating with your **CRM, calendar, and third-party tools**. This repository supports that mission by optimizing voice input for transcription speed and clarity, helping create a reliable and efficient voice AI pipeline.
 
 ---
 
@@ -15,3 +23,51 @@ This Node.js project enables **real-time speech-to-text transcription** using De
 - Programmed and measured **latency of voice isolation** in a real-time audio pipeline using open-source ML and Deepgram’s Nova-3 API — with an emphasis on **preserving audio quality**.
 - Integrated **LLMs, speech-to-text, and text-to-speech APIs** to enable **natural, real-time voice interaction**.
 - Built tools in **Node.js**, using **SoX** for live audio capture and processing on macOS.
+
+---
+
+
+New Implementations:
+
+//indexafter.js
+Microphone Settings:
+- Sample rate: 11kHz
+- Channels: 1 (Mono)
+- Encoding: mu-law
+
+Deepgram Settings:
+- Model: Nova-3 (newer)
+- Sample rate: 11kHz
+- Smart format: enabled
+- Punctuation: enabled
+- Endpointing: 150ms
+- Utterance end: 1500ms
+- Interim results: enabled
+
+Features:
+- Enhanced processing time tracking
+- Average time calculation
+- Excludes 0ms processing times
+- Blue-colored average time display 
+
+
+//indexhighsamp.js
+Microphone Settings:
+- Sample rate: 11kHz
+- Channels: 1 (Mono)
+- Encoding: mu-law
+
+Deepgram Settings:
+- Model: Nova-3
+- Sample rate: 11kHz
+- Smart format: disabled (for speed)
+- Punctuation: disabled (for speed)
+- Endpointing: 150ms
+- Utterance end: 1000ms
+- Interim results: enabled
+
+Features:
+- Enhanced processing time tracking
+- Average time calculation
+- Optimized for lowest latency
+- Cyan-colored "ULTRA-LOW" prefix
