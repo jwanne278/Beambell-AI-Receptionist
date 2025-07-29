@@ -1,0 +1,17 @@
+# README File
+
+# 🎤 Live Microphone Transcription with Deepgram
+
+This Node.js project enables **real-time speech-to-text transcription** using Deepgram’s API. It features color-coded console output, processing time tracking, microphone diagnostics, and multiple configuration modes for latency and accuracy testing.
+
+---
+
+## 🧠 Project Context: Built at Beambell AI, Seattle
+
+**Role:** Software Engineering Intern  
+**Duration:** Apr 2025 – Present
+
+### 👨‍💻 Internship Contributions:
+- Programmed and measured **latency of voice isolation** in a real-time audio pipeline using open-source ML and Deepgram’s Nova-3 API — with an emphasis on **preserving audio quality**.
+- Integrated **LLMs, speech-to-text, and text-to-speech APIs** to enable **natural, real-time voice interaction**.
+- Built tools in **Node.js**, using **SoX** for live audio capture and processing on macOS.
